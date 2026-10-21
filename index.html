@@ -4,30 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+    <title>MYTHORIA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="stayle.css">
 </head>
 
-<body class="min-h-screen bg-[url('./img/bg-ACC.jpg')] bg-cover bg-no-repeat">
-    
-    <header class="flex flex-row  justify-between p-4 text-white font-semibold text-center items-center ">
-        <div>
-            <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
-        </div>
-        <ul class="flex justify-between gap-4  ">
-            <li><a href="index.html">ACUEIL</a></li>
-            <li><a href="index.html">BOUTIQUE</a></li>
-            <li><a href="index.html">MON GRIMOIRE</a></li>
-            <li><a href="index.html">MON DECK</a></li>
-            <li><a href="index.html">MARCHE</a></li>
-        </ul>
-        <div>
-            <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.jpg" alt=""></a>
-        </div>
-    </header>
-    <main >
+<body>
+    <div class="min-h-screen w-full overflow-x-clip
+            bg-[url('./img/bg-ACN.jpg')]
+            bg-cover bg-center bg-no-repeat bg-fixed p-4">
+        <header
+            class="flex flex-row  justify-between p-4 text-white font-semibold text-center items-center bg-transparent">
+            <div>
+                <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
+            </div>
+            <ul class="flex justify-between gap-4  ">
+                <li><a href="index.html">ACUEIL</a></li>
+                <li><a href="index.html">BOUTIQUE</a></li>
+                <li><a href="index.html">MON GRIMOIRE</a></li>
+                <li><a href="index.html">MON DECK</a></li>
+                <li><a href="index.html">MARCHE</a></li>
+            </ul>
+            <div>
+                <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.png" alt=""></a>
+            </div>
+        </header>
 
-    </main>
+
+        <section class=" flex flex-col justify-between  items-center text-center text-white px-6 py-16 gap-6">
+
+            <p class="text-yellow-400 font-semibold">
+                JEU DE CARTES À COLLECTIONNER
+            </p>
+
+            <h2 class="text-2xl text-8xl font-bold mb-6 text-orange-500">
+                ENTREZ DANS </h2>
+            <span class="block w-2xl "><img src="img/logo.jpg" alt="logo MYTHORIA" class="logobet"></span>
+            <p class="font-semibold w-2xl bg-neutral-800">
+                Découvrez un univers dark fantasy peuplé de créatures légendaires,
+                de héros puissants et de sorts mystérieux.
+                Collectionnez vos cartes et préparez-vous au combat.
+            </p>
+            <div class="flex flex-row justify-between gap-6 mt-6">
+
+                <a href="boutique.html"
+                    class="flex items-center gap-3 px-6 py-4 bg-yellow-500 text-black font-bold rounded-sm hover:bg-yellow-400 shadow-lg">
+
+                    <img src="img/icon-booster.png" alt="Booster" class="w-8 h-8">
+
+                    <span>DECOUVRIR LES BOOSTERS</span>
+                </a>
+
+                <a href="grimoire.html"
+                    class="flex items-center gap-3 px-6 py-4 bg-black/60 text-yellow-400 font-bold border-2 border-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-black shadow-lg">
+
+                    <img src="img/spell-bookk.png" alt="Grimoire" class="w-8 h-8">
+
+                    <span>OUVRIR MON GRIMOIRE</span>
+                </a>
+
+            </div>
+        </section>
+        <section>
+            <div class="flex justify-center text-white flex-col items-center">
+                <span class="text-3xl text-yellow-400">________★________</span>
+                <h4 class="mb-6 text-2xl text-orange-500">LES 4 TYPE DE CARTES</h4>
+                <section class="categories" class="mb-6">
+
+                    <div class="category">
+                        <img src="img/ninja.jpg" alt="Naruto">
+
+                        <h2>NINJAS</h2>
+                    </div>
+
+                    <div class="category">
+                        <img src="img/kurama.jpg" alt="Kurama">
+
+                        <h2>CREATURES</h2>
+                    </div>
+
+                    <div class="category">
+                        <img src="img/jutsu.jpg" alt="Jutsu">
+
+                        <h2>JUTSU</h2>
+                    </div>
+
+                    <div class="category">
+                        <img src="img/dujutsu.jpg" alt="Armes ninja">
+
+                        <h2>DUJUTSU</h2>
+                    </div>
+
+                </section>
+                <section>
+                    <div class="flex justify-center text-white flex-col items-center">
+                        <span class="text-3xl text-yellow-400">________★________</span>
+                        <h4 class="mb-6 text-2xl text-orange-500">BOOSTERS DISPONIBLE</h4>
+                        <section class="BOOSTERS" class="mb-6">
+
+                            <div class="BOOSTER">
+                                <img src="img/shinobi-starter.jpg" alt="Naruto">
+
+                                <h2>shinobi starter</h2>
+                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Débutant</p>
+                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
+                                        alt="">
+                                    <span class="text-2xl text-orange-500">3$</span></a>
+                            </div>
+
+                            <div class="BOOSTER">
+                                <img src="img/akatsuki-pack.jpg" alt="Naruto">
+
+                                <h2>Akatsuki Pack</h2>
+                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Sombre</p>
+                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
+                                        alt="">
+                                    <span class="text-2xl text-orange-500">5$</span></a>
+                            </div>
+                            <div class="BOOSTER">
+                                <img src="img/shakra-Mastry.jpg" alt="Naruto">
+
+                                <h2>Chakra Mystery</h2>
+                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Mystère</p>
+                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
+                                        alt="">
+                                    <span class="text-2xl text-orange-500">4$</span></a>
+                            </div>
+
+                            <div class="BOOSTER">
+                                <img src="img/legent-pack.jpg" alt="Naruto">
+
+                                <h2>Legendary Shinobi</h2>
+                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Débutant</p>
+                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
+                                        alt="">
+                                    <span class="text-2xl text-orange-500">8$</span></a>
+                            </div>
+
+                        </section>
+                </section>
+            </div>
+
+
+            </main>
 </body>
 
 </html>

@@ -1,0 +1,94 @@
+
+.categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid orangered;
+}
+
+.category h2 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px orange;
+    font-weight: 1000;
+}
+h2,p,h4,span{
+    font-weight: 1000;
+}
+.category:hover img{
+    animation-duration: 2s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0% {
+        border-color: brown;
+    }
+    100%{
+        border-color: yellow;
+    }
+}
+.logobet{
+    margin-left: 93px;
+}
+.BOOSTERS {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.BOOSTER {
+    background-color: black;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 15px;
+    padding-bottom: 80px;
+    height: auto;
+
+}
+
+.BOOSTER img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid orangered;
+}
+
+.BOOSTER h2 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 1000;
+}
+#icon-shop{
+    width: 30px;
+    border: none;
+}
