@@ -1,4 +1,8 @@
-
+body{
+    padding-bottom: 15px;
+     font-weight: 700;
+     margin: 0;
+}
 .categories {
     display: flex;
     gap: 20px;
@@ -8,7 +12,7 @@
 .category {
     position: relative;
     width: 320px;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -31,10 +35,8 @@
     text-shadow: 2px 2px 5px orange;
     font-weight: 1000;
 }
-h2,p,h4,span{
-    font-weight: 1000;
-}
-.category:hover img{
+
+.categoryBT:hover img{
     animation-duration: 2s;
     animation-name: spin;
     animation-iteration-count: infinite;
@@ -51,10 +53,55 @@ h2,p,h4,span{
 .logobet{
     margin-left: 93px;
 }
+.BOOSTERSAC {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.BOOSTERAC {
+    background-color: black;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 15px;
+    padding-bottom: 80px;
+    height: auto;
+    border: 4px solid red;
+
+}
+
+.BOOSTERAC img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.BOOSTERAC h2 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 1000;
+}
+#icon-shop{
+    width: 30px;
+    border: none;
+}
+
+/* ======================================== */
 .BOOSTERS {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .BOOSTER {
@@ -65,8 +112,9 @@ h2,p,h4,span{
     overflow: hidden;
     border-radius: 12px;
     padding: 15px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     height: auto;
+    border: 4px solid red;
 
 }
 
@@ -74,7 +122,6 @@ h2,p,h4,span{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 4px solid orangered;
 }
 
 .BOOSTER h2 {
@@ -91,4 +138,62 @@ h2,p,h4,span{
 #icon-shop{
     width: 30px;
     border: none;
+}
+.akatsuki{
+    border: 4px solid red;
+}
+.BOOSTER img{
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+}
+/* ===================== */
+
+.categoriesBT {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categoryBT {
+    position: relative;
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 4px solid orangered;
+}
+
+.categoryBT img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.categoryBT h2 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px orange;
+    font-weight: 1000;
+}
+
+.categoryBT:hover{
+    animation-duration: 2s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0% {
+        border-color: brown;
+    }
+    100%{
+        border-color: yellow;
+    }
 }

@@ -10,27 +10,26 @@
 </head>
 
 <body>
+
+    <header class="flex flex-row  justify-between p-4 text-white bg-orange-500 font-semibold text-center items-center">
+        <div>
+            <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
+        </div>
+        <ul class="flex justify-between gap-4  ">
+            <li><a href="index.html">ACUEIL</a></li>
+            <li><a href="boutique.html">BOUTIQUE</a></li>
+            <li><a href="index.html">MON GRIMOIRE</a></li>
+            <li><a href="index.html">MON DECK</a></li>
+            <li><a href="index.html">MARCHE</a></li>
+        </ul>
+        <div>
+            <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.png" alt=""></a>
+        </div>
+    </header>
+
     <div class="min-h-screen w-full overflow-x-clip
             bg-[url('./img/bg-ACN.jpg')]
             bg-cover bg-center bg-no-repeat bg-fixed p-4">
-        <header
-            class="flex flex-row  justify-between p-4 text-white font-semibold text-center items-center bg-transparent">
-            <div>
-                <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
-            </div>
-            <ul class="flex justify-between gap-4  ">
-                <li><a href="index.html">ACUEIL</a></li>
-                <li><a href="index.html">BOUTIQUE</a></li>
-                <li><a href="index.html">MON GRIMOIRE</a></li>
-                <li><a href="index.html">MON DECK</a></li>
-                <li><a href="index.html">MARCHE</a></li>
-            </ul>
-            <div>
-                <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.png" alt=""></a>
-            </div>
-        </header>
-
-
         <section class=" flex flex-col justify-between  items-center text-center text-white px-6 py-16 gap-6">
 
             <p class="text-yellow-400 font-semibold">
@@ -72,7 +71,7 @@
                 <section class="categories" class="mb-6">
 
                     <div class="category">
-                        <img src="img/ninja.jpg" alt="Naruto">
+                        <img src="img/ninja.jpg" alt="Naruto" class="w-5 h-40 object-cover">
 
                         <h2>NINJAS</h2>
                     </div>
@@ -100,9 +99,9 @@
                     <div class="flex justify-center text-white flex-col items-center">
                         <span class="text-3xl text-yellow-400">________★________</span>
                         <h4 class="mb-6 text-2xl text-orange-500">BOOSTERS DISPONIBLE</h4>
-                        <section class="BOOSTERS" class="mb-6">
+                        <section class="BOOSTERSAC" class="mb-6">
 
-                            <div class="BOOSTER">
+                            <div class="BOOSTERAC">
                                 <img src="img/shinobi-starter.jpg" alt="Naruto">
 
                                 <h2>shinobi starter</h2>
@@ -112,7 +111,7 @@
                                     <span class="text-2xl text-orange-500">3$</span></a>
                             </div>
 
-                            <div class="BOOSTER">
+                            <div class="BOOSTERAC" class="border-2 border-red-500">
                                 <img src="img/akatsuki-pack.jpg" alt="Naruto">
 
                                 <h2>Akatsuki Pack</h2>
@@ -121,7 +120,7 @@
                                         alt="">
                                     <span class="text-2xl text-orange-500">5$</span></a>
                             </div>
-                            <div class="BOOSTER">
+                            <div class="BOOSTERAC">
                                 <img src="img/shakra-Mastry.jpg" alt="Naruto">
 
                                 <h2>Chakra Mystery</h2>
@@ -131,7 +130,7 @@
                                     <span class="text-2xl text-orange-500">4$</span></a>
                             </div>
 
-                            <div class="BOOSTER">
+                            <div class="BOOSTERAC">
                                 <img src="img/legent-pack.jpg" alt="Naruto">
 
                                 <h2>Legendary Shinobi</h2>
@@ -148,5 +147,22 @@
 
             </main>
 </body>
+
+<footer class="bg-black text-white text-center p-6 border-t-4 border-orange-500">
+
+    <h2 class="text-orange-500 text-2xl font-bold">
+        MYTHORIA
+    </h2>
+
+    <p class="mt-2 text-gray-300">
+        Entrez dans un monde de légendes !
+    </p>
+
+    <p class="mt-4 text-sm text-yellow-400">
+        © 2026 MYTHORIA - Tous droits réservés.
+    </p>
+
+</footer>
+
 
 </html>
