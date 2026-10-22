@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,160 +10,158 @@
     <link rel="stylesheet" href="stayle.css">
 </head>
 
-<body>
+<body class="bg-[#090B12] text-white">
 
-    <header class="flex flex-row  justify-between p-4 text-white bg-orange-500 font-semibold text-center items-center">
-        <div>
-            <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
-        </div>
-        <ul class="flex justify-between gap-4  ">
-            <li><a href="index.html">ACUEIL</a></li>
-            <li><a href="boutique.html">BOUTIQUE</a></li>
-            <li><a href="index.html">MON GRIMOIRE</a></li>
-            <li><a href="index.html">MON DECK</a></li>
-            <li><a href="index.html">MARCHE</a></li>
-        </ul>
-        <div>
-            <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.png" alt=""></a>
-        </div>
+    <header class="flex justify-between items-center p-4 bg-[#171923] border-b-2 border-amber-400">
+
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="Logo Mythoria" class="h-10 w-auto">
+        </a>
+
+        <nav>
+            <ul class="flex gap-4 flex-wrap">
+                <li><a href="index.html" class="text-amber-400">ACCUEIL</a></li>
+                <li><a href="boutique.html" class="hover:text-orange-400">BOUTIQUE</a></li>
+                <li><a href="grimoire.html" class="hover:text-orange-400">MON GRIMOIRE</a></li>
+                <li><a href="deck.html" class="hover:text-orange-400">MON DECK</a></li>
+                <li><a href="marche.html" class="hover:text-orange-400">MARCHÉ</a></li>
+            </ul>
+        </nav>
+
+        <a href="boutique.html">
+            <img src="img/icon-shop.png" alt="Boutique" class="h-8 w-auto">
+        </a>
+
     </header>
 
-    <div class="min-h-screen w-full overflow-x-clip
-            bg-[url('./img/bg-ACN.jpg')]
-            bg-cover bg-center bg-no-repeat bg-fixed p-4">
-        <section class=" flex flex-col justify-between  items-center text-center text-white px-6 py-16 gap-6">
+    <main>
+        <section class="min-h-screen flex flex-col justify-center items-center text-center gap-6 p-6 bg-[url('./img/bg-ACN.jpg')] bg-cover bg-center">
 
-            <p class="text-yellow-400 font-semibold">
+            <p class="text-amber-400 font-bold">
                 JEU DE CARTES À COLLECTIONNER
             </p>
 
-            <h2 class="text-2xl text-8xl font-bold mb-6 text-orange-500">
-                ENTREZ DANS </h2>
-            <span class="block w-2xl "><img src="img/logo.jpg" alt="logo MYTHORIA" class="logobet"></span>
-            <p class="font-semibold w-2xl bg-neutral-800">
-                Découvrez un univers dark fantasy peuplé de créatures légendaires,
-                de héros puissants et de sorts mystérieux.
+            <h1 class="text-5xl font-bold text-orange-500">
+                ENTREZ DANS
+            </h1>
+
+            <img src="img/logo.jpg" alt="MYTHORIA" class="w-72 max-w-full">
+
+            <p class="max-w-xl bg-black/70 p-4 rounded-lg">
+                Découvrez un univers dark fantasy peuplé de créatures
+                légendaires, de héros puissants et de sorts mystérieux.
                 Collectionnez vos cartes et préparez-vous au combat.
             </p>
-            <div class="flex flex-row justify-between gap-6 mt-6">
+
+            <div class="flex gap-4 flex-wrap justify-center">
 
                 <a href="boutique.html"
-                    class="flex items-center gap-3 px-6 py-4 bg-yellow-500 text-black font-bold rounded-sm hover:bg-yellow-400 shadow-lg">
-
-                    <img src="img/icon-booster.png" alt="Booster" class="w-8 h-8">
-
-                    <span>DECOUVRIR LES BOOSTERS</span>
+                    class="bg-amber-500 text-black p-3 rounded-lg hover:bg-orange-500">
+                    DÉCOUVRIR LES BOOSTERS
                 </a>
 
                 <a href="grimoire.html"
-                    class="flex items-center gap-3 px-6 py-4 bg-black/60 text-yellow-400 font-bold border-2 border-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-black shadow-lg">
-
-                    <img src="img/spell-bookk.png" alt="Grimoire" class="w-8 h-8">
-
-                    <span>OUVRIR MON GRIMOIRE</span>
+                    class="border-2 border-amber-400 text-amber-400 p-3 rounded-lg hover:bg-amber-500 hover:text-black">
+                    OUVRIR MON GRIMOIRE
                 </a>
 
             </div>
+
         </section>
-        <section>
-            <div class="flex justify-center text-white flex-col items-center">
-                <span class="text-3xl text-yellow-400">________★________</span>
-                <h4 class="mb-6 text-2xl text-orange-500">LES 4 TYPE DE CARTES</h4>
-                <section class="categories" class="mb-6">
+        <section class="p-8">
 
-                    <div class="category">
-                        <img src="img/ninja.jpg" alt="Naruto" class="w-5 h-40 object-cover">
+            <h2 class="text-3xl text-center text-amber-400 mb-8">
+                ★ LES TYPES DE CARTES ★
+            </h2>
 
-                        <h2>NINJAS</h2>
-                    </div>
+            <div class="categories">
 
-                    <div class="category">
-                        <img src="img/kurama.jpg" alt="Kurama">
+                <div class="category">
+                    <img src="img/ninja.jpg" alt="Ninjas">
+                    <h2>NINJAS</h2>
+                </div>
 
-                        <h2>CREATURES</h2>
-                    </div>
+                <div class="category">
+                    <img src="img/kurama.jpg" alt="Créatures">
+                    <h2>CRÉATURES</h2>
+                </div>
 
-                    <div class="category">
-                        <img src="img/jutsu.jpg" alt="Jutsu">
+                <div class="category">
+                    <img src="img/jutsu.jpg" alt="Jutsu">
+                    <h2>JUTSU</h2>
+                </div>
 
-                        <h2>JUTSU</h2>
-                    </div>
+                <div class="category">
+                    <img src="img/dujutsu.jpg" alt="Dojutsu">
+                    <h2>DOJUTSU</h2>
+                </div>
 
-                    <div class="category">
-                        <img src="img/dujutsu.jpg" alt="Armes ninja">
-
-                        <h2>DUJUTSU</h2>
-                    </div>
-
-                </section>
-                <section>
-                    <div class="flex justify-center text-white flex-col items-center">
-                        <span class="text-3xl text-yellow-400">________★________</span>
-                        <h4 class="mb-6 text-2xl text-orange-500">BOOSTERS DISPONIBLE</h4>
-                        <section class="BOOSTERSAC" class="mb-6">
-
-                            <div class="BOOSTERAC">
-                                <img src="img/shinobi-starter.jpg" alt="Naruto">
-
-                                <h2>shinobi starter</h2>
-                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Débutant</p>
-                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
-                                        alt="">
-                                    <span class="text-2xl text-orange-500">3$</span></a>
-                            </div>
-
-                            <div class="BOOSTERAC" class="border-2 border-red-500">
-                                <img src="img/akatsuki-pack.jpg" alt="Naruto">
-
-                                <h2>Akatsuki Pack</h2>
-                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Sombre</p>
-                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
-                                        alt="">
-                                    <span class="text-2xl text-orange-500">5$</span></a>
-                            </div>
-                            <div class="BOOSTERAC">
-                                <img src="img/shakra-Mastry.jpg" alt="Naruto">
-
-                                <h2>Chakra Mystery</h2>
-                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Mystère</p>
-                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
-                                        alt="">
-                                    <span class="text-2xl text-orange-500">4$</span></a>
-                            </div>
-
-                            <div class="BOOSTERAC">
-                                <img src="img/legent-pack.jpg" alt="Naruto">
-
-                                <h2>Legendary Shinobi</h2>
-                                <p class="flex justify-center justify-between text-[20px]">5 cartes · Débutant</p>
-                                <a href="shop" class="flex justify-between"><img id="icon-shop" src="img/icon-shop.png"
-                                        alt="">
-                                    <span class="text-2xl text-orange-500">8$</span></a>
-                            </div>
-
-                        </section>
-                </section>
             </div>
 
+        </section>
 
-            </main>
+
+        <section class="p-8">
+
+            <h2 class="text-3xl text-center text-amber-400 mb-8">
+                ★ NOS BOOSTERS ★
+            </h2>
+
+            <div class="BOOSTERSAC">
+
+                <div class="BOOSTERAC">
+                    <img src="img/shinobi-starter.jpg" alt="Shinobi Starter">
+                    <h2>Shinobi Starter</h2>
+                    <p>5 cartes · Débutant</p>
+                    <p class="text-orange-400 text-xl mt-3">4,99 $</p>
+                    <a href="boutique.html" class="block bg-amber-500 text-black p-2 mt-3 rounded">
+                        Découvrir
+                    </a>
+                </div>
+
+                <div class="BOOSTERAC">
+                    <img src="img/akatsuki-pack.jpg" alt="Akatsuki Pack">
+                    <h2>Akatsuki Pack</h2>
+                    <p>5 cartes · Rare</p>
+                    <p class="text-orange-400 text-xl mt-3">9,99 $</p>
+                    <a href="boutique.html" class="block bg-amber-500 text-black p-2 mt-3 rounded">
+                        Découvrir
+                    </a>
+                </div>
+
+                <div class="BOOSTERAC">
+                    <img src="img/shakra-Mastry.jpg" alt="Chakra Mystery">
+                    <h2>Chakra Mystery</h2>
+                    <p>5 cartes · Mystère</p>
+                    <p class="text-orange-400 text-xl mt-3">8,99 $</p>
+                    <a href="boutique.html" class="block bg-amber-500 text-black p-2 mt-3 rounded">
+                        Découvrir
+                    </a>
+                </div>
+
+                <div class="BOOSTERAC">
+                    <img src="img/legent-pack.jpg" alt="Legendary Shinobi">
+                    <h2>Legendary Shinobi</h2>
+                    <p>5 cartes · Légendaire</p>
+                    <p class="text-orange-400 text-xl mt-3">12,99 $</p>
+                    <a href="boutique.html" class="block bg-amber-500 text-black p-2 mt-3 rounded">
+                        Découvrir
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 border-t-2 border-amber-400 bg-[#171923]">
+        <h2 class="text-2xl text-amber-400">MYTHORIA</h2>
+        <p class="mt-2">Entrez dans un monde de légendes !</p>
+        <p class="mt-4 text-sm text-gray-400">
+            © 2026 MYTHORIA - Tous droits réservés.
+        </p>
+    </footer>
+
 </body>
-
-<footer class="bg-black text-white text-center p-6 border-t-4 border-orange-500">
-
-    <h2 class="text-orange-500 text-2xl font-bold">
-        MYTHORIA
-    </h2>
-
-    <p class="mt-2 text-gray-300">
-        Entrez dans un monde de légendes !
-    </p>
-
-    <p class="mt-4 text-sm text-yellow-400">
-        © 2026 MYTHORIA - Tous droits réservés.
-    </p>
-
-</footer>
-
-
 </html>

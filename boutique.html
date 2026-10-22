@@ -1,155 +1,196 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOUTIQUE-MYTHORIA</title>
+    <title>BOUTIQUE - MYTHORIA</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="stayle.css">
 </head>
 
-<body class="bg-black">
-    <header class="flex flex-row  justify-between p-4 text-white bg-orange-500 font-semibold text-center items-center">
-        <div>
-            <a href="index.html"><img class="h-10 w-auto" src="img/logo.jpg" alt=""></a>
-        </div>
+<body class="bg-[#090B12] text-white">
+
+    <header class="flex justify-between items-center p-4 bg-[#171923] border-b-2 border-amber-400">
+
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="Logo Mythoria" class="h-10 w-auto">
+        </a>
         <nav>
-            <ul class="flex justify-between gap-4  ">
-                <li><a href="index.html">ACUEIL</a></li>
-                <li><a href="boutique.html">BOUTIQUE</a></li>
-                <li><a href="grimoire.html">MON GRIMOIRE</a></li>
-                <li><a href="deck.html">MON DECK</a></li>
-                <li><a href="marche.html">MARCHE</a></li>
+            <ul class="flex gap-4 flex-wrap">
+                <li><a href="index.html" class="hover:text-orange-400">ACCUEIL</a></li>
+                <li><a href="boutique.html" class="text-amber-400">BOUTIQUE</a></li>
+                <li><a href="grimoire.html" class="hover:text-orange-400">MON GRIMOIRE</a></li>
+                <li><a href="deck.html" class="hover:text-orange-400">MON DECK</a></li>
+                <li><a href="marche.html" class="hover:text-orange-400">MARCHÉ</a></li>
             </ul>
         </nav>
-        <div>
-            <a href="shop"><img class="h-8 w-auto objict" src="img/icon-shop.png" alt=""></a>
-        </div>
+        <a href="boutique.html">
+            <img src="img/icon-shop.png" alt="Panier" class="h-8 w-auto">
+        </a>
     </header>
-    <main>
-        <section>
-            <img src="img/photo-Bot.jpg" alt="">
+    <main class="p-6">
+
+        <section class="text-center p-6">
+
+            <img src="img/photo-Bot.jpg" alt="Univers Mythoria"
+                class="w-full max-h-80 object-cover rounded-lg mb-8">
+
+            <p class="text-amber-400 text-xl">DÉCOUVREZ NOS COLLECTIONS</p>
+
+            <h1 class="text-4xl text-orange-500 font-bold mt-4">
+                NOS BOOSTERS
+            </h1>
+
+            <p class="text-gray-300 mt-4">
+                Choisissez votre booster et découvrez les cartes
+                qui vous attendent dans l'univers Mythoria.
+            </p>
+
         </section>
+        <section class="BOOSTERS">
 
-        <div class="flex justify-center text-white flex-col items-center">
-            <span class="text-3xl text-yellow-400">________★________</span>
-            <h4 class="mb-6 text-2xl text-orange-500">NOS BOOSTERS</h4>
-        </div>
-        <section class="BOOSTERS" class="mb-6">
-
-
-            <div class="BOOSTER ">
-                <img src="img/shinobi-starter.jpg" alt="Naruto">
-                <h2 class="mt-3 text-xl font-bold">Shinobi Starter</h2>
-                <p class="mt-1 text-sm text-gray-300">Idéal pour les nouveaux ninjas.</p>
-                <p class="mt-3 font-bold text-sky-400">5 cartes · Débutant</p>
-                <p class="my-3 text-xl font-bold text-white">4,99$</p>
-                <a href="shop" class="flex-row justify-between items-center"><button
-                        class="w-full rounded-lg bg-orange-500 p-2 font-bold text-black hover:bg-orange-400">
-                        🛒 Ajouter au panier <span class=" text-black-500">4,99$</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="BOOSTER akatsuki">
-
-                <img src="img/akatsuki-pack.jpg" alt="Naruto">
-
-                <h2 class="mt-3 text-xl font-bold">Akatsuki Pack</h2>
-                <p class="mt-1 text-sm text-gray-300">Invocation des légendes.</p>
-                <p class="mt-3 font-bold text-orange-400">5 cartes · Rare</p>
-                <p class="my-3 text-xl font-bold text-white">9,99 $</p>
-                <a href="shop" class="flex-row justify-between items-center"><button
-                        class="w-full rounded-lg bg-orange-500 p-2 font-bold text-black hover:bg-orange-400">
-                        🛒 Ajouter au panier <span class=" text-black-500">9,99$</span>
-                    </button>
-                </a>
-            </div>
             <div class="BOOSTER">
-                <img src="img/shakra-Mastry.jpg" alt="Naruto">
-                <h2 class="mt-3 text-xl font-bold">Chakra Mystery</h2>
-                <p class="mt-1 text-sm text-gray-300">Un booster mystérieux.</p>
-                <p class="mt-3 font-bold text-purple-400">5 cartes · Mystère</p>
-                <p class="my-3 text-xl font-bold text-white">8,99$</p>
+                <img src="img/shinobi-starter.jpg" alt="Shinobi Starter">
 
+                <h2>Shinobi Starter</h2>
+                <p class="text-gray-300 mt-2">Idéal pour les nouveaux ninjas.</p>
+                <p class="text-amber-400 mt-3">5 cartes · Débutant</p>
+                <p class="text-xl text-orange-400 mt-3">4,99 $</p>
 
-                <a href="shop" class="flex-row justify-between items-center"><button
-                        class="w-full rounded-lg bg-orange-500 p-2 font-bold text-black hover:bg-orange-400">
-                        🛒 Ajouter au panier <span class=" text-black-500">8,99$</span>
-                    </button>
+                <a href="#"
+                    class="ajouter-panier block bg-amber-500 text-black p-3 mt-4 rounded-lg text-center hover:bg-orange-500" data-name="shinobi-starter" data-price="4.99">
+                    Ajouter au panier
                 </a>
             </div>
 
             <div class="BOOSTER">
-                <img src="img/legent-pack.jpg" alt="Naruto">
-                <h2 class="mt-3 text-xl font-bold">Legendary Shinobi</h2>
-                <p class="mt-1 text-sm text-gray-300">Découvrez des cartes légendaires.</p>
-                <p class="mt-3 font-bold text-red-400">5 cartes · Légendaire</p>
-                <p class="my-3 text-xl font-bold text-white">12,99$</p>
+                <img src="img/akatsuki-pack.jpg" alt="Akatsuki Pack">
 
+                <h2>Akatsuki Pack</h2>
+                <p class="text-gray-300 mt-2">Invocation des légendes.</p>
+                <p class="text-orange-400 mt-3">5 cartes · Rare</p>
+                <p class="text-xl text-orange-400 mt-3">9,99 $</p>
 
+                <a href="#"
+                    class="ajouter-panier block bg-amber-500 text-black p-3 mt-4 rounded-lg text-center hover:bg-orange-500" data-name="akatsuki-pack" data-price="9.99">
+                    Ajouter au panier
+                </a>
+            </div>
 
-                <a href="shop" class="flex-row justify-between items-center"><button
-                        class="w-full rounded-lg bg-orange-500 p-2 font-bold text-black hover:bg-orange-400">
-                        🛒 Ajouter au panier <span class=" text-black-500">12,99$</span>
-                    </button>
+            <div class="BOOSTER">
+                <img src="img/shakra-Mastry.jpg" alt="Chakra Mystery">
+
+                <h2>Chakra Mystery</h2>
+                <p class="text-gray-300 mt-2">Un booster mystérieux.</p>
+                <p class="text-purple-400 mt-3">5 cartes · Mystère</p>
+                <p class="text-xl text-orange-400 mt-3">8,99 $</p>
+
+                <a href="#"
+                    class="ajouter-panier block bg-amber-500 text-black p-3 mt-4 rounded-lg text-center hover:bg-orange-500" data-name="shakra-Mastry" data-price="8.99">
+                    Ajouter au panier
+                </a>
+            </div>
+
+            <div class="BOOSTER">
+                <img src="img/legent-pack.jpg" alt="Legendary Shinobi">
+
+                <h2>Legendary Shinobi</h2>
+                <p class="text-gray-300 mt-2">Découvrez des cartes légendaires.</p>
+                <p class="text-red-400 mt-3">5 cartes · Légendaire</p>
+                <p class="text-xl text-orange-400 mt-3">12,99 $</p>
+
+                <a href="#"
+                    class="ajouter-panier block bg-amber-500 text-black p-3 mt-4 rounded-lg text-center hover:bg-orange-500" data-name="Legendary Shinobi" data-price="12.99">
+                    Ajouter au panier
                 </a>
             </div>
 
         </section>
-        <section>
-            <div class="flex justify-center text-white flex-col items-center">
-                <span class="text-3xl text-yellow-400">________★________</span>
-                <h4 class="mb-6 text-2xl text-orange-500">Cartes Légendaire en vedette </h4>
-                <section class="categoriesBT" class="mb-6">
 
-                    <div class="categoryBT">
-                        <p class="bg-amber-500 p-2">LEGENDARIES</p>
-                        <img src="img/cart1.jpg" alt="Naruto" class="w-5 h-40 object-cover">
-                    </div>
+        <section class="p-6 mt-10">
 
-                    <div class="categoryBT">
-                        <p class="bg-red-500 p-2">LEGENDARIES</p>
-                        <img src="img/cart2.jpg" alt="Kurama">
-                    </div>
+            <h2 class="text-3xl text-center text-amber-400 mb-8">
+                ★ CARTES LÉGENDAIRES ★
+            </h2>
 
-                    <div class="categoryBT">
-                        <p class="bg-cyan-300 p-2">EPIQUES</p>
-                        <img src="img/car3.jpg" alt="Jutsu">
-                    </div>
+            <div class="categoriesBT">
 
-                    <div class="categoryBT">
-                        <p class="bg-violet-600 p-2">EPIQUES</p>
+                <div class="categoryBT">
+                    <p class="bg-amber-500 p-2 text-black">LÉGENDAIRE</p>
+                    <img src="img/cart1.jpg" alt="Carte légendaire">
+                </div>
 
-                        <img src="img/cart4.jpg" alt="Armes ninja">
+                <div class="categoryBT">
+                    <p class="bg-red-600 p-2">LÉGENDAIRE</p>
+                    <img src="img/cart2.jpg" alt="Carte légendaire">
+                </div>
 
+                <div class="categoryBT">
+                    <p class="bg-cyan-600 p-2">ÉPIQUE</p>
+                    <img src="img/car3.jpg" alt="Carte épique">
+                </div>
 
-                    </div>
+                <div class="categoryBT">
+                    <p class="bg-purple-600 p-2">ÉPIQUE</p>
+                    <img src="img/cart4.jpg" alt="Carte épique">
+                </div>
 
-                </section>
+            </div>
 
+        </section>
 
     </main>
+    
+<section id="panier" class="p-6 mt-10 bg-[#171923] rounded-lg border-2 border-amber-400">
 
+    <h2 class="text-3xl text-center text-amber-400 mb-6">
+        🛒 MON PANIER
+    </h2>
+    <div id="liste-panier">
+
+        <p class="text-center text-gray-400 p-6">
+            Votre panier est vide.
+        </p>
+
+    </div>
+    <div class="flex justify-between items-center mt-6 border-t border-gray-600 pt-4">
+
+        <h3 class="text-xl font-bold text-white">
+            TOTAL :
+        </h3>
+
+        <p id="total-panier" class="text-2xl font-bold text-amber-400">
+            0,00 $
+        </p>
+
+    </div>
+    <div class="flex justify-center gap-4 mt-6 flex-wrap">
+
+        <button id="vider-panier"
+            type="button"
+            class="bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">
+            Vider le panier
+        </button>
+
+        <button id="commander"
+            type="button"
+            class="bg-amber-500 text-black font-bold p-3 rounded-lg hover:bg-orange-500">
+            Confirmer la commande
+        </button>
+
+    </div>
+
+</section>
+
+
+    <footer class="text-center p-6 mt-8 border-t-2 border-amber-400 bg-[#171923]">
+        <h2 class="text-2xl text-amber-400">MYTHORIA</h2>
+        <p class="mt-2">Entrez dans un monde de légendes !</p>
+       
+    </footer>
+    <script src="panier.js"></script>
 
 </body>
-
-<footer class="bg-black text-white text-center p-6 border-t-4 border-orange-500">
-
-    <h2 class="text-orange-500 text-2xl font-bold">
-        MYTHORIA
-    </h2>
-
-    <p class="mt-2 text-gray-300">
-        Entrez dans un monde de légendes !
-    </p>
-
-    <p class="mt-4 text-sm text-yellow-400">
-        © 2026 MYTHORIA - Tous droits réservés.
-    </p>
-
-</footer>
-
-
 </html>
