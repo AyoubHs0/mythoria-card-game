@@ -1,10 +1,26 @@
-let panier = JSON.parse(localStorage.getItem("panier")) || [];
+
 let boutons = document.querySelectorAll(".ajouter-panier");
 let listepanier = document.querySelector("#liste-panier")
 let totalpanier = document.querySelector("#total-panier")
 let boutonVider = document.querySelector("#vider-panier");
 let boutonCommander = document.querySelector("#commander");
+let noms = localStorage.getItem("nomsPanier") || "";
+let panier = [];
+if(noms !==""){
+    let listeNoms = noms.split(",");
 
+    for (let i = 0 ; i < listeNoms.length ; i++) {
+        let produit = localStorage.getItem(listeNoms[i]);
+        if (produit){
+            let infos = produit.split ("|");
+            panier.push({
+                nom : infos[0],
+                prix : Number(infos[1]),
+                quantite : Number(infos[2])
+            })
+        }
+    }
+}
 
 boutons.forEach(function (bouton) {
     bouton.addEventListener("click", function () {
@@ -60,6 +76,7 @@ function afficherpanier() {
                 return p.nom !== produit.nom;
 
             });
+            localStorage.removeItem(produit.nom);
             afficherpanier();
             savepanier()
         })
@@ -72,7 +89,11 @@ function afficherpanier() {
 }
 
 boutonVider.addEventListener("click", function () {
+    for (let i = 0 ; i < panier.length ; i++){
+        localStorage.removeItem(panier[i].nom)
+    }
     panier = [];
+    localStorage.removeItem("nomsPanier")
     afficherpanier();
     savepanier()
 
@@ -88,13 +109,26 @@ boutonCommander.addEventListener("click", function () {
 
         })
         alert("Commande confirmée ! Total : " + total.toFixed(2) + "$");
+        for (let i = 0 ; i < panier.length ; i++){
+            localStorage.removeItem(panier[i].nom)
+        }
         panier = []
+        localStorage.removeItem("nomsPanier")
         afficherpanier();
         savepanier()
     }
 })
 function savepanier() {
-    localStorage.setItem("panier", JSON.stringify(panier));
+    let noms = [];
+    for (let i = 0 ; i<panier.length;i++){
+        let produit = panier[i];
+        noms.push(produit.nom);
+        localStorage.setItem(
+            produit.nom,
+            produit.nom + "|" + produit.prix + "|" + produit.quantite
+        );
+    }
+    localStorage.setItem("nomsPanier", noms.join(","))
 }
 
 afficherpanier();
