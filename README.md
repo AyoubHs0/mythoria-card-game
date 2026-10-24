@@ -31,9 +31,4 @@ Développer un système permettant au joueur d’ouvrir un booster et de découv
 ### 📋 Résultat attendu
 Une interface permettant d’ouvrir un booster et d’afficher les cartes obtenues aléatoirement.
 
-### 📸 Preuves du livrable
-- Capture d’écran de l’interface d’ouverture.
-- Capture d’écran des cartes obtenues.
-- Lien vers le code source sur GitHub.
-
 **Statut :** À compléter selon l’avancement réel du projet.

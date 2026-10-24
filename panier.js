@@ -108,6 +108,19 @@ boutonCommander.addEventListener("click", function () {
             total += produit.prix * produit.quantite
 
         })
+        let boostersAchetes = localStorage.getItem("boostersAchetes");
+        if (boostersAchetes === null){
+            boostersAchetes = ""
+        }
+        panier.forEach(function(produit){
+            for(let i = 0 ; i < produit.quantite ; i++){
+                if(boostersAchetes !== ""){
+                    boostersAchetes += "|";
+                }
+                boostersAchetes += produit.nom 
+            }
+        });
+        localStorage.setItem("boostersAchetes" , boostersAchetes)
         alert("Commande confirmée ! Total : " + total.toFixed(2) + "$");
         for (let i = 0 ; i < panier.length ; i++){
             localStorage.removeItem(panier[i].nom)
