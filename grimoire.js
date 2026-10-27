@@ -66,9 +66,32 @@ function affichercartes(collection){
         rarete.textContent = cart.rarete
         rarete.className = "text-amber-400 font-bold"
 
+        let boutton = document.createElement("button");
+        boutton.textContent = "ajouter au deck"
+        boutton.className = "bg-amber-400 text-black p-2 rounded-lg"
+        boutton.addEventListener("click",function(){
+            let decksave = localStorage.getItem("monDeck")
+            let nomsdeck = [];
+            if(decksave !== null && decksave !== ""){
+                nomsdeck = decksave.split("|").filter(function(nom){
+                    return nom !== "";
+                })
+
+            }
+            if (nomsdeck.length >= 20){
+                alert("votre deck est complet (20/20)");
+                return ;
+
+            }
+            nomsdeck.push(cart.nom);
+            localStorage.setItem("monDeck" , nomsdeck.join("|"))
+            alert ("carte ajouter au deck")
+        })
+
         bloc.appendChild(image)
         bloc.appendChild(titre)
         bloc.appendChild(rarete)
+        bloc.appendChild(boutton)
 
         listeCartes.appendChild(bloc)
 
