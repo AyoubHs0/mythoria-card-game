@@ -89,10 +89,10 @@ if (boostersAchetes === null || boostersAchetes === "") {
         let btn = document.createElement("button")
         btn.className = "block bg-amber-500 text-black p-3 mt-4 rounded-lg text-center hover:bg-orange-500"
         btn.textContent = "OUVRIR"
-        btn.addEventListener("click", function(){
+        btn.addEventListener("click", function () {
             let cartesobtenues = generecartes(nom);
             zonecartes.innerHTML = "";
-            for(let carte of cartesobtenues){
+            for (let carte of cartesobtenues) {
                 let bloc = document.createElement("div");
                 bloc.className = "flex flex-col items-center gap-3 w-48 p-4 bg-[#171923] border border-amber-400 rounded-xl";
                 let imagecarte = document.createElement("img");
@@ -101,7 +101,7 @@ if (boostersAchetes === null || boostersAchetes === "") {
                 imagecarte.className = "w-full h-64 object-cover rounded-lg";
 
                 let nomcarte = document.createElement("h3");
-                nomcarte.textContent = carte.nom ; 
+                nomcarte.textContent = carte.nom;
                 nomcarte.className = "text-amber-400 font-bold text-center"
 
                 let raretecarte = document.createElement("p");
@@ -113,6 +113,25 @@ if (boostersAchetes === null || boostersAchetes === "") {
                 bloc.appendChild(raretecarte);
                 zonecartes.appendChild(bloc)
             }
+
+            // ====supprimer le boostres open;
+            let boostersActuals = localStorage.getItem("boostersAchetes")
+
+            let liste = boostersActuals.split("|")
+
+            let index = liste.indexOf(nom)
+            if (index !== -1) {
+                liste.splice(index, 1)
+            }
+            localStorage.setItem("boostersAchetes", liste.join("|"))
+            let quantiteRestante = liste.filter(function(booster){
+                return booster === nom ;
+            }).length;
+            number.textContent = "x" + quantiteRestante;
+            if(quantiteRestante === 0 ){
+                content.remove()
+            }
+
         })
 
         content.appendChild(image)
@@ -165,20 +184,20 @@ let reglesBoosters = {
         }
     }
 };
-function choisirrarete(probabilites){
-    let nombre = Math.random()*100;
+function choisirrarete(probabilites) {
+    let nombre = Math.random() * 100;
     let total = 0;
-    for (let rarete in probabilites){
-        total +=probabilites[rarete]
-        if(nombre < total){
+    for (let rarete in probabilites) {
+        total += probabilites[rarete]
+        if (nombre < total) {
             return rarete
         }
     }
 }
 
 
-function choisircart(rarete){
-    let cartesdispo = cartes.filter(function(cartes){
+function choisircart(rarete) {
+    let cartesdispo = cartes.filter(function (cartes) {
         return cartes.rarete === rarete
     })
     let index = Math.floor(Math.random() * cartesdispo.length)
@@ -188,10 +207,10 @@ let rarete = choisirrarete(
     reglesBoosters["shinobi-starter"].probabilites
 );
 
-function generecartes(nombooster){
+function generecartes(nombooster) {
     let cartesobtenues = [];
-    let regle = reglesBoosters [nombooster]
-    for (let i = 0 ; i <  regle.nombreCartes ;i++){
+    let regle = reglesBoosters[nombooster]
+    for (let i = 0; i < regle.nombreCartes; i++) {
         let rarete = choisirrarete(regle.probabilites);
         let carte = choisircart(rarete);
         cartesobtenues.push(carte)
