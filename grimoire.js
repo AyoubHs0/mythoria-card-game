@@ -68,7 +68,6 @@ function affichercartes(collection){
 
         bloc.appendChild(image)
         bloc.appendChild(titre)
-        bloc.appendChild(type)
         bloc.appendChild(rarete)
 
         listeCartes.appendChild(bloc)
@@ -76,3 +75,14 @@ function affichercartes(collection){
     }
 }
 affichercartes (macollection)
+filterrarete.addEventListener("change" , function(){
+    let choix = filterrarete.value
+    if(choix === "toutes"){
+        affichercartes(macollection)
+    }else{
+        let resultet = macollection.filter(function(cart){
+            return cart.rarete === choix
+        })
+    affichercartes(resultet)
+    }
+})
