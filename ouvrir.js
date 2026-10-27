@@ -91,6 +91,17 @@ if (boostersAchetes === null || boostersAchetes === "") {
         btn.textContent = "OUVRIR"
         btn.addEventListener("click", function () {
             let cartesobtenues = generecartes(nom);
+            // ========localstorage de carte : 
+            let cartessave = localStorage.getItem("cartesCollection")
+            if (cartessave === null || cartessave === ""){
+                cartessave = "";
+            }
+            for(let carte of cartesobtenues){
+                cartessave += carte.nom + "|";
+            }
+            localStorage.setItem("cartesCollection" , cartessave)
+
+
             zonecartes.innerHTML = "";
             for (let carte of cartesobtenues) {
                 let bloc = document.createElement("div");
@@ -203,9 +214,7 @@ function choisircart(rarete) {
     let index = Math.floor(Math.random() * cartesdispo.length)
     return cartesdispo[index];
 }
-let rarete = choisirrarete(
-    reglesBoosters["shinobi-starter"].probabilites
-);
+
 
 function generecartes(nombooster) {
     let cartesobtenues = [];
