@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MON GRIMOIRE</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="stayle.css">
+</head>
+
+<body class="bg-[#090B12] min-h-screen text-white flex flex-col">
+    <header class="flex flex-col md:flex-row justify-between items-center gap-4 p-4 bg-[#171923] border-b-2 border-amber-400">
+
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="Logo Mythoria" class="h-10 w-auto">
+        </a>
+
+        <nav>
+            <ul class="flex justify-center gap-3 flex-wrap text-sm md:text-base">
+                <li><a href="index.html" class="hover:text-orange-400">ACCUEIL</a></li>
+                <li><a href="boutique.html" class="hover:text-orange-400">BOUTIQUE</a></li>
+                <li><a href="grimoire.html" class="hover:text-orange-400">MON GRIMOIRE</a></li>
+                <li><a href="deck.html" class="hover:text-orange-400">MON DECK</a></li>
+                <li><a href="ouvrir.html" class="hover:text-orange-400">OUVERTURE DES BOOSTERS</a></li>
+                 <li><a href="arena.html" class="text-amber-400">ARENA</a></li>
+            </ul>
+        </nav>
+
+        <a href="boutique.html">
+            <img src="img/icon-shop.png" alt="Boutique" class="h-8 w-auto">
+        </a>
+
+    </header>
+    <main class="w-full max-w-7xl mx-auto p-3 sm:p-5 md:p-6">
+        <h2 class="text-3xl text-center text-amber-400 mb-8">
+            ★ ARENA ★
+        </h2>
+
+        <section class="bg-[#171923] p-5 rounded-lg mb-6">
+            <h2 class="text-amber-400 text-center mb-6">choiser votre camp</h2>
+            <div class="flex flex-wrap justify-center  gap-4">
+                <button class="border-amber-400 text-center border-2 p-2 text-amber-400 rounded-lg">lumiare</button>
+                <button class="border border-purple-400 text-purple-400 p-3 rounded-lg">teneibre</button>
+            </div>
+            <p class="text-center text-gray-400 mt-4">Lancez la pièce pour déterminer le premier joueur.</p>
+            <div class="text-center">
+                <button class="text-center text-black p-4 rounded-lg mt-2 bg-amber-500"> LANCER LA PIÈCE</button>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div class="bg-[#171923] p-5 rounded-lg mb-6 text-center border-2 border-amber-400">
+                <h2 class="text-amber-400">VOUS</h2>
+                <p>HP<span>3000</span></p>
+            </div>
+            <div class="bg-[#171923] p-5 rounded-lg mb-6 text-center border-2 border-red-400">
+                <h2 class="text-red-400">ADDEVIRISERE</h2>
+                <p>HP<span>3000</span></p>
+
+            </div>
+
+        </section>
+
+
+        <section class="w-full bg-[#171923] p-2 rounded-lg  ">
+            <h2 class="text-amber-400 text-center">CHAMP DE BATAILLE</h2>
+            <h3 class="text-red-400 mb-3">Terrain adverse</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+                <div
+                    class="h-45 w-full bg-[#171923] border-2 border-red-400 rounded-lg flex items-center justify-center">+
+                </div>
+            </div>
+            <h3 class="text-amber-400 m-6">Votre terrain</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+            </div>
+
+        </section>
+        <section class=" bg-[#171923] mt-4 rounded-lg p-2">
+            <h2 class="text-amber-400 m-6">votre main</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+                <div 
+                    class="h-45 w-full bg-[#171923] border-2 border-amber-400 rounded-lg flex items-center justify-center">
+                    +</div>
+            </div>
+
+        </section>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+            <div class="bg-[#171923] p-5 rounded-lg text-center">
+
+                <h2 class="text-xl text-purple-400 mb-3">
+                    MON DECK
+                </h2>
+
+                <p class="text-gray-300">
+                    Cartes restantes : 15
+                </p>
+
+                <button class="mt-4 border border-purple-400 text-purple-400 p-3 rounded-lg">
+                    PIOCHER UNE CARTE
+                </button>
+
+            </div>
+            <div class="bg-[#171923] p-5 rounded-lg">
+                <div class="flex flex-wrap justify-center gap-2">
+                    <button class="bg-amber-500 text-black p-3 rounded-lg">
+                        INVOQUER
+                    </button>
+
+                    <button class="bg-red-600 p-3 rounded-lg">
+                        ATTAQUER
+                    </button>
+
+                    <button class="bg-blue-600 p-3 rounded-lg">
+                        DÉFENDRE
+                    </button>
+                </div>
+                <div class="text-center mt-4">
+
+                    <button class="bg-orange-500 text-black font-bold p-3 rounded-lg">
+                        TERMINER LE TOUR
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="text-center p-6 border-t-2 border-amber-400 bg-[#171923]">
+        <h2 class="text-2xl text-amber-400">MYTHORIA</h2>
+        <p class="mt-2">Entrez dans un monde de légendes !</p>
+        <p class="mt-4 text-sm text-gray-400">
+            © 2026 MYTHORIA - Tous droits réservés.
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
